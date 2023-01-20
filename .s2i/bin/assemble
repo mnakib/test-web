@@ -16,8 +16,14 @@ rm -rf ./.hg ./.git ./.svn
 DATE=date "+%b %d, %Y @ %H:%M %p"
 
 echo "-------> Create info page"
-echo "This infor page was build in $DATE" >> ./info.html
+echo "This infor page was built in $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
+
+echo "-------> Create documentation page"
+echo "This infos page was built in $DATE" >> ./doc.html
+echo "This page all documentation needed to browse this web server" >> ./doc.html
+
+
 
 # CUSTOMIZATION ENDS HERE 
 
