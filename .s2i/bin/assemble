@@ -13,14 +13,14 @@ echo "---> Installing application source"
 cp -af /tmp/src/*.html ./
 rm -rf ./.hg ./.git ./.svn
 
-DATE=date "+%b %d, %Y @ %H:%M %p"
+#DATE=date "+%b %d, %Y @ %H:%M %p"
 
 echo "-------> Create info page"
-echo "This infor page was built in $DATE" >> ./info.html
+echo "This infor page was built in DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 echo "-------> Create documentation page"
-echo "This infos page was built in $DATE" >> ./doc.html
+echo "This infos page was built in DATE" >> ./doc.html
 echo "This page all documentation needed to browse this web server" >> ./doc.html
 
 
